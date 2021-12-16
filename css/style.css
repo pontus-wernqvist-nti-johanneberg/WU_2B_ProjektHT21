@@ -9,12 +9,12 @@
 
 #wrappermain {
     display: grid;
-    background: url("../img/bakgrund.jpg");
+    background: rgb(50, 50, 50);
     grid-template-columns: minmax(100px, 1fr)*7;
-    grid-template-rows: minmax(80px, 1fr) minmax(400px, 4fr) minmax(200px, 2fr) minmax(300px, 3fr) minmax(100px, 1fr);
+    grid-template-rows: minmax(80px, 0.9fr) minmax(400px, 4fr) minmax(200px, 2fr) minmax(300px, 3fr) minmax(100px, 1fr);
     gap: 0px;
     grid-template-areas: 
-        "he na na na na na na"
+        "he .  .  .  .  .  na "
         "hu hu hu hu hu hu hu"
         "hm hm hm hm hm hm hm"
         "hl hl hl hl hl hl hl"
@@ -25,24 +25,39 @@
 
 header {
     grid-area: he;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
 }
 
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     grid-area: na;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(50, 50, 50);       
+}
+
+#nav_links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    width: 500px;
+    justify-content: space-evenly;
 }
 
 #hpu_wrapper {
     grid-area: hu;
-    background-image: url("../img/logo.png");
+    background-image: url("../img/mainbackground.png");
     background-color: gold;
-    background-size: 100%
+    background-size: cover;
 }
 
 #hpm_wrapper {
     grid-area: hm;
-    background-color: rgb(51, 51, 51);
+    background-color: rgb(33, 33, 33);
 }
 
 #hpl_wrapper {
@@ -52,7 +67,7 @@ nav {
     
 footer {
     grid-area: fo;
-    background-color: rgb(48, 48, 48);
+    background-color: rgb(50, 50, 50);
 }
 
 h1 {
@@ -73,4 +88,23 @@ p {
 img {
     color: white;
     font-size: 1rem;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1rem;
+    font-weight: bold;
+    color: white;
+}
+
+a:hover {
+    color: grey;
+}
+
+#logo {
+    height: 80px;
+    width: auto;
 }
