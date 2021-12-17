@@ -11,8 +11,8 @@
     display: grid;
     background: rgb(50, 50, 50);
     grid-template-columns: minmax(100px, 1fr)*7;
-    grid-template-rows: minmax(80px, 0.9fr) minmax(400px, 4fr) minmax(200px, 2fr) minmax(300px, 3fr) minmax(100px, 1fr);
-    gap: 0px;
+    grid-template-rows: minmax(80px, 0.7fr) minmax(400px, 4fr) minmax(200px, 2fr) minmax(300px, 3fr) minmax(100px, 1fr);
+    gap: 0px;   
     grid-template-areas: 
         "he .  .  .  .  .  na "
         "hu hu hu hu hu hu hu"
@@ -51,31 +51,57 @@ nav {
 #hpu_wrapper {
     grid-area: hu;
     background-image: url("../img/mainbackground.png");
-    background-color: gold;
+    background-color: rgba(255, 217, 0, 0.678);
     background-size: cover;
 }
 
-#hpm_wrapper {
+#hpm {
     grid-area: hm;
-    background-color: rgb(33, 33, 33);
+    background-color: rgb(33, 33, 33, 0.5);
 }
 
 #hpl_wrapper {
     grid-area: hl;
-    background-color: rgb(58, 97, 97);
+    background-color: rgba(58, 97, 97, 0.5);
 }
     
 footer {
     grid-area: fo;
     background-color: rgb(50, 50, 50);
+    display: flex;
+    flex-direction: row;
 }
+
+footer {
+    grid-area: fo;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(50, 50, 50);
+}
+
+#footer_links {
+    list-style: none;
+    display: flex;
+}
+
+.footimg {
+    height: 80px;
+    width: 80px;
+}
+
 
 h1 {
     color: white;
-    font-size: 3.4375rem;   
+    font-size: 5.5625rem; 
 }
 
 h2 {
+    color: white;
+    font-size: 3.4375rem; 
+}
+
+h3 {
     color: white;
     font-size: 2.125rem;
 }
@@ -95,7 +121,7 @@ img {
 a {
     text-decoration: none;
     font-family: 'Courier New', Courier, monospace;
-    font-size: 1rem;
+    font-size: 1.5rem;
     font-weight: bold;
     color: white;
 }
@@ -104,7 +130,35 @@ a:hover {
     color: grey;
 }
 
-#logo {
+.logo {
     height: 80px;
     width: auto;
 }
+
+#welcome {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 140px;
+}
+
+li {
+    margin: 15px;
+}
+
+#matbild1 {
+    height: 100px;
+    width: 100px;
+}
+
+#matbild2 {
+    height: 100px;
+    width: 100px;
+}
+
+#matbild3 {
+    height: 100px;
+    width: 100px;
+}
+    
