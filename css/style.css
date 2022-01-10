@@ -11,7 +11,7 @@
     display: grid;
     background: rgb(50, 50, 50);
     grid-template-columns: minmax(100px, 1fr)*7;
-    grid-template-rows: minmax(80px, 0.8fr) minmax(400px, 4.2fr) minmax(200px, 1.5fr) minmax(250px, 2.75fr) minmax(50px, 0.5fr);
+    grid-template-rows: minmax(80px, 0.8fr) minmax(400px, 4.15fr) minmax(200px, 1.5fr) minmax(250px, 2.75fr) minmax(50px, 0.5fr);
     gap: 0px;   
     grid-template-areas: 
         "he .  .  .  .  .  na "
@@ -62,6 +62,7 @@ nav {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    padding-bottom: 4rem;
 
 }
 
@@ -142,6 +143,9 @@ footer {
 h1 {
     color: white;
     font-size: 5.5625rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 h2 {
@@ -188,13 +192,14 @@ li {
 }
 
 #matbild1 {
-    height: 125px;
-    width: 125px;
+    height: 20vh;
+    width: 20vw;
+    position: relative;
 }
 
 #matbild2 {
-    height: 125px;
-    width: 125px;
+    height: 20vh;
+    width: 20vw;
 }
 
 #matbild3 {
