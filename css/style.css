@@ -11,14 +11,14 @@
     display: grid;
     background: rgb(50, 50, 50);
     grid-template-columns: minmax(100px, 1fr)*7;
-    grid-template-rows: minmax(80px, 0.7fr) minmax(400px, 4fr) minmax(200px, 2fr) minmax(300px, 3fr) minmax(100px, 1fr);
+    grid-template-rows: minmax(80px, 0.8fr) minmax(400px, 4fr) minmax(200px, 2fr) minmax(250px, 2.5fr) minmax(50px, auto);
     gap: 0px;   
     grid-template-areas: 
         "he .  .  .  .  .  na "
-        "hu hu hu hu hu hu hu"
+        "hu hu hu hu hu hu hu "
         "hm hm hm hm hm hm hm"
-        "hl hl hl hl hl hl hl"
-        "fo fo fo fo fo fo fo";
+        "hl hl hl hl hl hl hl "
+        "fo fo fo fo fo fo fo ";
 
     font-family: 'Kanit', sans-serif;
 }
@@ -48,7 +48,7 @@ nav {
     justify-content: space-evenly;
 }
 
-#hpu_wrapper {
+#hpu {
     grid-area: hu;
     background-image: url("../img/mainbackground.png");
     background-color: rgba(255, 217, 0, 0.678);
@@ -60,9 +60,47 @@ nav {
     background-color: rgb(33, 33, 33, 0.5);
 }
 
+#idea {
+    grid-area: id;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+#ideatext {
+    grid-area: it;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
 #hpl_wrapper {
     grid-area: hl;
     background-color: rgba(58, 97, 97, 0.5);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: "rp re";
+}
+
+#home_page_lower_reviews {
+    grid-area: re;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 10%;
+}
+
+#home_page_lower_pics {
+    grid-area: rp;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px;
+    margin-right: 10%;
 }
     
 footer {
@@ -148,13 +186,13 @@ li {
 }
 
 #matbild1 {
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
 }
 
 #matbild2 {
-    height: 100px;
-    width: 100px;
+    height: 125px;
+    width: 125px;
 }
 
 #matbild3 {
