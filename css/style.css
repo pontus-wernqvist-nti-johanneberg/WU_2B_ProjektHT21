@@ -54,7 +54,7 @@ nav {
     grid-area: hu;
     background-image: url("../img/mainbackground.png");
     background-color: rgba(255, 217, 0, 0.678);
-    background-size: 100vw 100%;
+    background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     align-items: center;
@@ -123,7 +123,6 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgb(50, 50, 50);
 }
 
 #footer_links {
@@ -198,4 +197,30 @@ li {
 #matbild2 {
     height: 125px;
     width: 125px;
+}
+
+#wrapperhitta {
+    display: grid;
+    background: rgb(50, 50, 50);
+    grid-template-columns: minmax(100px, 1fr)*7;
+    grid-template-rows: 1fr 8fr 1fr;
+    grid-template-areas:
+        "he .  .  .  .  .  na"
+        "mh mh mh mh mh mh mh"
+        "fo fo fo fo fo fo fo";
+    width: 100vw;
+    height: 120vh;
+}
+
+#map {
+    grid-area: mh;
+    background-color: rgba(58, 97, 97, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+iframe {
+    width: 90%;
+    height: 90%;
 }
