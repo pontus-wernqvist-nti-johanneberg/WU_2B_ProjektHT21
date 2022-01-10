@@ -21,6 +21,7 @@
         "fo fo fo fo fo fo fo ";
     width: 100vw;
     max-width: 100%;
+    height: 200vh;
 
     font-family: 'Kanit', sans-serif;
 }
