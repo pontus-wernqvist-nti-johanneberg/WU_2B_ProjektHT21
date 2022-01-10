@@ -11,7 +11,7 @@
     display: grid;
     background: rgb(50, 50, 50);
     grid-template-columns: minmax(100px, 1fr)*7;
-    grid-template-rows: minmax(80px, 0.8fr) minmax(400px, 4fr) minmax(200px, 1.5fr) minmax(250px, 3fr) minmax(50px, 0.5fr);
+    grid-template-rows: minmax(80px, 0.8fr) minmax(400px, 4.2fr) minmax(200px, 1.5fr) minmax(250px, 2.8fr) minmax(50px, 0.5fr);
     gap: 0px;   
     grid-template-areas: 
         "he .  .  .  .  .  na "
@@ -21,7 +21,7 @@
         "fo fo fo fo fo fo fo ";
     width: 100vw;
     max-width: 100%;
-    height: 205vh;
+    height: 200vh;
 
 
     font-family: 'Kanit', sans-serif;
@@ -57,6 +57,11 @@ nav {
     background-image: url("../img/mainbackground.png");
     background-color: rgba(255, 217, 0, 0.678);
     background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
 }
 
 #hpm {
@@ -175,14 +180,6 @@ a:hover {
 .logo {
     height: 80px;
     width: auto;
-}
-
-#welcome {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding: 8.75rem;   
 }
 
 li {
