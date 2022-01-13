@@ -9,58 +9,78 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body>
+<body id="bodymeny">
     
     <div class="wrapper" id="wrappermeny">
 
-        <header>
+        <div class="headernavwrapper">
 
-            <a href="index.html"><img class="logo" src="img/LogoWUrestauranghighres.png" alt="Restaurangens logga"></a>
-        
-        </header>
+            <header>
 
-        <nav>
-            <ul id="nav_links">
-                <li><a href="meny.html">Meny</a></li>
-                <li><a href="hitta_hit.html">Hitta hit</a></li>
-            </ul>
-        </nav>
+                <a href="index.html"><img class="logo" src="img/LogoWUrestauranghighres.png" alt="Restaurangens logga"></a>
             
-            <section id="meny">
-                    <section id="reviews"> 
-        
-                        <article class="recension">
-                            <h1>"Fantastiskt!"</h1>
-                            <p>Bo Lind - SVD</p>
-                        </article>
-        
-                        <article class="recension">
-                            <h1>"Wow just wow!"</h1>
-                            <p>Donald Trump - Fox</p>
-                        </article>
-        
-                    </section>
-        
-                    <div id="matbilder">
-        
-                        <img id="matbild1" src="img/matbild1.jpg" alt="Maträtten X på menyn">
-                        <img id="matbild2" src="img/matbild1.jpg" alt="Maträtten Y på menyn">
-                        <img id="matbild3" src="img/matbild1.jpg" alt="Maträtten Z på menyn">
-        
-                    </div> 
-                </section>
+            </header>
 
-            <footer> 
-                    <img class="logo" src="img/logo.jpg" alt="Restaurangens logga">
-        
-                        <ul id="footer_links">
-                            <li><a href="#"><img id="gmail" src="img/gmail_logo.jpg" alt="Restaurangens Gmail"></a></li>
-                            <li><a href="#"><img id="instagram" src="img/instagram_logo.jpg" alt="Restaurangens Instagram"></a></li>
-                            <li><p>Telefon: 0727242025</p></li>
-                            <li><p>Adress: Origovägen 3, Göteborg</p></li>
-                        </ul>
+            <nav>
+                <ul id="nav_links">
+                    <li><a href="meny.html">Meny</a></li>
+                    <li><a href="hitta_hit.html">Hitta hit</a></li>
+                </ul>
+            </nav>
+
+        </div>
+
+        <section id="appetizers" class="menycategories">
+                <section><h3>Förrätter</h3></section>
                 
-            </footer> 
+            <ul class=menylist>
+                <li><p><strong>Sparrissallad på närodlad sparris</strong> / 68 kr</p></li>
+                <li><p><strong>Härbakade Krustader</strong> / 79 kr</p></li>
+                <li><p><strong>Ekologisk Toast Skagen</strong> / 86 kr</p></li>
+            </ul>
+        </section>
+
+        <section id="maincourses" class="menycategories">
+                <section><h3>Huvudrätter</h3></section>
+            
+            <ul class=menylist>
+                <li><p><strong>Svensk MSC-märkt Torskrygg</strong> / 240 kr</p></li>
+                <li><p><strong>Vegansk Impossible Burger</strong> / 248 kr</p></li>
+                <li><p><strong>Svensk KRAV-märkt Entrecôte</strong> / 379 kr</p></li>
+            </ul>
+        </section>
+
+        <section id="desserts" class="menycategories">
+            <section><h3>Efterrätter</h3></section>
+            
+            <ul class=menylist>
+                <li><p><strong>Kaffeglass på Fairtradebönor</strong> / 99 kr</p></li>
+                <li><p><strong>Ekologisk Crème Brûlée</strong> / 119 kr</p></li>
+                <li><p><strong>Vegansk Chokladfondant med hallon</strong> / 119 kr</p></li>
+            </ul>
+        </section>
+
+        <section id="drinks" class="menycategories">
+                <section><h3>Drickor</h3></section>
+
+            <ul class=menylist>
+                <li><p><strong>Vanligt Vatten</strong> / 20 kr glaset / 60 kr flaskan</p></li>
+                <li><p><strong>Merlot från Blaxsta</strong> / 60 kr glaset / 200 kr flaskan</p></li>
+                <li><p><strong>Bubbel från Flyinge</strong> / 60 kr glaset / 200 kr flaskan</p></li>
+            </ul>
+        </section>
+            
+        <footer>         
+            <ul id="footer_links">
+                <li><h3>Tel: 118 800</h3></li>
+                <li><a href="mailto:pontus.wernqvist@elev.ga.ntig.se"><img class="footimg" src="img/gmail.svg.png" alt="Vår Gmail"></a></li>
+                <li><img class="logo" src="img/LogoWUrestauranghighres.png" alt="Restaurangens logga"></li>  
+                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><img class="footimg" src="img/instagram.png" alt="Vår Instagram"></a></li>
+                <li><h3>Origovägen 3</h3></li>
+            </ul>
+        
+        </footer> 
+
     </div>  
 
 </body>
