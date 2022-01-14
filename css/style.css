@@ -11,7 +11,7 @@
 #wrappermain {
     display: grid;
     background: rgb(54, 74, 74);
-    grid-template-columns: minmax(100px, 1fr)*7;
+    grid-template-columns: minmax(100px, 1fr    )*7;
     grid-template-rows: minmax(80px, 0.85fr) minmax(400px, 4.95fr) minmax(200px, 2fr) minmax(250px, 3fr) minmax(80px, auto);
     gap: 0px;   
     grid-template-areas: 
@@ -130,9 +130,7 @@ footer {
 
 .footimg {
     height: 80px;
-    max-height: 0.45fr;
     width: 80px;
-    max-width: auto;
 }
 
 
@@ -281,12 +279,15 @@ strong {
 .headernavwrapper {
     grid-area: hn;
     background-color: rgb(50, 50, 50);
-    grid-template-columns: minmax(1fr)*7;
+    grid-template-columns: 1fr*7;
     grid-template-rows: auto;
     grid-template-areas:
     "he .  .  .  .  .  na";
+    }
+
+.headernavwrapper {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    }
+}
 
