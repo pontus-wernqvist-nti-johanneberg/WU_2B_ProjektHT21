@@ -5,7 +5,7 @@
     margin: 0;
     box-sizing: border-box;
     max-width: 100%;
-    font-family: 'Montserrat', serif;
+    font-family: 'Montserrat', sans-serif;
     }
 
 #wrappermain {
@@ -140,19 +140,19 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', serif;
 }
 
 h2 {
     color: rgb(235, 217, 183);
     font-size: 3.4375rem; 
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', serif;
 }
 
 h3 {
     color: rgb(235, 217, 183);
     font-size: 2.125rem;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', serif;
 }
 
 p {
