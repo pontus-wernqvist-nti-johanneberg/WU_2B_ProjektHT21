@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@600&display=swap');
+/* ----- GENERELL KOD ----- */
 
 * {
     padding: 0;
@@ -6,23 +6,22 @@
     box-sizing: border-box;
     max-width: 100%;
     font-family: 'Montserrat', sans-serif;
-    }
+}
 
-#wrappermain {
-    display: grid;
-    background: rgb(54, 74, 74);
-    grid-template-columns: minmax(100px, 1fr    )*7;
-    grid-template-rows: minmax(80px, 0.85fr) minmax(400px, 4.95fr) minmax(200px, 2fr) minmax(250px, 3fr) minmax(80px, auto);
-    gap: 0px;   
-    grid-template-areas: 
-        "hn hn hn hn hn hn hn"
-        "hu hu hu hu hu hu hu"
-        "hm hm hm hm hm hm hm"
-        "hl hl hl hl hl hl hl"
-        "fo fo fo fo fo fo fo";
-    width: 100vw;
-    min-height: 200vh;
-    height: auto;
+
+.headernavwrapper {
+    grid-area: hn;
+    background-color: rgb(50, 50, 50);
+    grid-template-columns: 1fr*7;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "he .  .  .  .  .  na";
+}
+
+.headernavwrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 header {
@@ -48,6 +47,107 @@ nav {
     width: 31.25rem;
     justify-content: space-evenly;
 }
+
+footer {
+    grid-area: fo;
+    background-color: rgb(50, 50, 50);
+    display: flex;
+    flex-direction: row;
+}
+
+footer {
+    grid-area: fo;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#footer_links {
+    list-style: none;
+    display: flex;
+}
+
+.footimg {
+    height: 80px;
+    width: 80px;
+}
+
+
+h1 {
+    color: rgb(235, 217, 183);
+    font-size: 5.5625rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', serif;
+}
+
+h2 {
+    color: rgb(235, 217, 183);
+    font-size: 3.4375rem; 
+    font-family: 'Montserrat', serif;
+}
+
+h3 {
+    color: rgb(235, 217, 183);
+    font-size: 2.125rem;
+    font-family: 'Montserrat', serif;
+}
+
+p {
+    color: rgb(235, 217, 183);
+    font-size: 1rem;
+}
+
+strong {
+    font-weight: bold;
+}
+
+img {
+    color: rgb(235, 217, 183);
+    font-size: 1rem;
+    object-fit: cover;
+    object-position: bottom;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.8rem;
+    font-weight: lighter;
+    font-family: 'Montserrat', serif;
+    color: rgb(230, 212, 179);
+}
+
+.logo {
+    height: 80px;
+    width: auto;
+}
+
+li {
+    margin: 1rem;
+}
+
+
+
+/* ----- INDEX (HUVUDSIDA) ----- */
+#wrappermain {
+    display: grid;
+    background: rgb(54, 74, 74);
+    grid-template-columns: minmax(100px, 1fr)*7;
+    grid-template-rows: minmax(80px, 0.85fr) minmax(400px, 4.95fr) minmax(200px, 2fr) minmax(250px, 3fr) minmax(80px, auto);
+    gap: 0px;   
+    grid-template-areas: 
+        "hn hn hn hn hn hn hn"
+        "hu hu hu hu hu hu hu"
+        "hm hm hm hm hm hm hm"
+        "hl hl hl hl hl hl hl"
+        "fo fo fo fo fo fo fo";
+    width: 100vw;
+    min-height: 200vh;
+    height: auto;
+}
+
+
 
 #hpu {
     grid-area: hu;
@@ -108,84 +208,6 @@ nav {
     justify-content: space-evenly;
     gap: 1rem;
 }
-    
-footer {
-    grid-area: fo;
-    background-color: rgb(50, 50, 50);
-    display: flex;
-    flex-direction: row;
-}
-
-footer {
-    grid-area: fo;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-#footer_links {
-    list-style: none;
-    display: flex;
-}
-
-.footimg {
-    height: 80px;
-    width: 80px;
-}
-
-
-h1 {
-    color: rgb(235, 217, 183);
-    font-size: 5.5625rem; 
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-family: 'Montserrat', serif;
-}
-
-h2 {
-    color: rgb(235, 217, 183);
-    font-size: 3.4375rem; 
-    font-family: 'Montserrat', serif;
-}
-
-h3 {
-    color: rgb(235, 217, 183);
-    font-size: 2.125rem;
-    font-family: 'Montserrat', serif;
-}
-
-p {
-    color: rgb(235, 217, 183);
-    font-size: 1rem;
-}
-
-img {
-    color: rgb(235, 217, 183);
-    font-size: 1rem;
-    object-fit: cover;
-    object-position: bottom;
-}
-
-a {
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: rgb(230, 212, 179);
-}
-
-li>a:hover {
-    color: grey;
-}
-
-.logo {
-    height: 80px;
-    width: auto;
-}
-
-li {
-    margin: 1rem;
-}
 
 #matbild1 {
     height: 125px;
@@ -197,6 +219,9 @@ li {
     width: 125px;
 }
 
+
+
+/* ----- HITTA HIT ----- */
 #wrapperhitta {
     display: grid;
     background: rgb(54, 74, 74);
@@ -224,6 +249,9 @@ iframe {
     height: 70%;
 }
 
+
+
+/* ----- MENY ----- */
 #wrappermeny {
     display: grid;
     background: rgb(54, 74, 74);
@@ -239,10 +267,6 @@ iframe {
     "fo fo fo fo fo fo fo";
     min-height: 200vh;
     height: auto;
-}
-
-strong {
-    font-weight: bold;
 }
 
 #appetizers {
@@ -275,19 +299,3 @@ strong {
     align-items: center;
     background-color: rgb(33, 33, 33, 0.5);
 }
-
-.headernavwrapper {
-    grid-area: hn;
-    background-color: rgb(50, 50, 50);
-    grid-template-columns: 1fr*7;
-    grid-template-rows: auto;
-    grid-template-areas:
-    "he .  .  .  .  .  na";
-    }
-
-.headernavwrapper {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
